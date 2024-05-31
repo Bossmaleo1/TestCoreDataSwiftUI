@@ -13,6 +13,10 @@
 		5990F29B2C049B1D0010EA3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5990F29A2C049B1D0010EA3D /* Preview Assets.xcassets */; };
 		5990F29D2C049B1D0010EA3D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990F29C2C049B1D0010EA3D /* Persistence.swift */; };
 		5990F2A02C049B1D0010EA3D /* TestCoreDataSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5990F29E2C049B1D0010EA3D /* TestCoreDataSwiftUI.xcdatamodeld */; };
+		5990F2A82C04C4FC0010EA3D /* MyPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990F2A72C04C4FC0010EA3D /* MyPersistenceController.swift */; };
+		5990F2AB2C04E8350010EA3D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990F2AA2C04E8350010EA3D /* HomeView.swift */; };
+		5990F2AD2C04F1150010EA3D /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990F2AC2C04F1150010EA3D /* AddContactView.swift */; };
+		5990F2B02C04FB3A0010EA3D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990F2AF2C04FB3A0010EA3D /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		5990F29A2C049B1D0010EA3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5990F29C2C049B1D0010EA3D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5990F29F2C049B1D0010EA3D /* TestCoreDataSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCoreDataSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		5990F2A72C04C4FC0010EA3D /* MyPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPersistenceController.swift; sourceTree = "<group>"; };
+		5990F2AA2C04E8350010EA3D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5990F2AC2C04F1150010EA3D /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		5990F2AF2C04FB3A0010EA3D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +63,11 @@
 		5990F2922C049B1B0010EA3D /* TestCoreDataSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5990F2AE2C04F7340010EA3D /* Legacy */,
+				5990F2A92C04E7FA0010EA3D /* View */,
+				5990F2A62C04C4CF0010EA3D /* MyCoreData */,
 				5990F2932C049B1B0010EA3D /* TestCoreDataSwiftUIApp.swift */,
-				5990F2952C049B1B0010EA3D /* ContentView.swift */,
 				5990F2972C049B1D0010EA3D /* Assets.xcassets */,
-				5990F29C2C049B1D0010EA3D /* Persistence.swift */,
 				5990F29E2C049B1D0010EA3D /* TestCoreDataSwiftUI.xcdatamodeld */,
 				5990F2992C049B1D0010EA3D /* Preview Content */,
 			);
@@ -71,6 +80,33 @@
 				5990F29A2C049B1D0010EA3D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5990F2A62C04C4CF0010EA3D /* MyCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5990F2A72C04C4FC0010EA3D /* MyPersistenceController.swift */,
+			);
+			path = MyCoreData;
+			sourceTree = "<group>";
+		};
+		5990F2A92C04E7FA0010EA3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5990F2AA2C04E8350010EA3D /* HomeView.swift */,
+				5990F2AC2C04F1150010EA3D /* AddContactView.swift */,
+				5990F2AF2C04FB3A0010EA3D /* TextFieldView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5990F2AE2C04F7340010EA3D /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				5990F2952C049B1B0010EA3D /* ContentView.swift */,
+				5990F29C2C049B1D0010EA3D /* Persistence.swift */,
+			);
+			path = Legacy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5990F2A82C04C4FC0010EA3D /* MyPersistenceController.swift in Sources */,
 				5990F2A02C049B1D0010EA3D /* TestCoreDataSwiftUI.xcdatamodeld in Sources */,
+				5990F2B02C04FB3A0010EA3D /* TextFieldView.swift in Sources */,
 				5990F29D2C049B1D0010EA3D /* Persistence.swift in Sources */,
+				5990F2AB2C04E8350010EA3D /* HomeView.swift in Sources */,
 				5990F2962C049B1B0010EA3D /* ContentView.swift in Sources */,
+				5990F2AD2C04F1150010EA3D /* AddContactView.swift in Sources */,
 				5990F2942C049B1B0010EA3D /* TestCoreDataSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
